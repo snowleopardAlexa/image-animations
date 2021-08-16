@@ -15,7 +15,7 @@
     background-color: black;
     height: 500px;
     width: 800px;
-    border: 1px solid black;
+    position: relative;
 }
 
 .container img {
@@ -23,3 +23,14 @@
     height: 100%;
 }
 
+.img-transition {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.img-transition:hover {
+    opacity: 1;
+}
